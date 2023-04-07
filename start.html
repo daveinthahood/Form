@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>HTML Lesson</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Email -->
+  <label for="send_email"> Email </label>
+  <input type="email"id="Email" name="send_email" placeholder="email" required>
+
+    <!-- PassWord -->
+  <label for="choose_password"> Password </label>
+  <input type="password" id="Password" name="choose_password" placeholder="password" required>
+
+
+    <!-- Name and Last Name-->
+  <label for="your_name"> Name </label>
+  <input type="text" id="Name" name="your_name" pattern="[A-Za-z]+" placeholder="name" required>
+
+  <label for="your_lastname"> Last Name </label>
+  <input type="text" id="Last Name" name="your_lastname" pattern="[A-Za-z]+" placeholder="Last Name" required>
+
+  <!--Date of birth -->
+  <label for="your_birth"> Birth Date</label>
+  <input type="date" id="birth" name="your_birth" value="Birth Date">
+
+  <!-- Telephone Numeber -->
+  <label for="telephone_number"> Telephone </label>
+  <input type="tel" id="Telephone" name="telephone_number" pattern="[0-9]+"placeholder="Your Number">
+
+  <!--Plans -->
+  <label for="our_plans"> Seleziona il tuo abbonamento </label>
+  <select name="our_plans" id="our_plans">
+    <optgroup label="Free Plan">
+      <option value="free_plan"> Free Plan</option>
+    </optgroup>
+    <optgroup label="Paid Plan">
+      <option value="2.00"> 2.00$</option>
+      <option value="4.00"> 4.00$</option>
+      <option value="8.00"> 8.00$ </option>
+    </optgroup>
+  </select>
+ <br>
+ 
+  <label for="pro_plan"> Buy Pro Plan </label>
+  <input type="checkbox" name="pro_plan" id="pro_plan" value= "pro plan">
+  <!-- Credit Card Number -->
+  <label for="credit_card"> Credit Card </label>
+  <input type="text" name="credit_card" id="credit_card" pattern="[0-9]+" minlength="16" maxlength="16" placeholder="1234 1234 1234 1234">
+
+  <!--CVC-->
+  <label for="CVC"> CVC </label>
+  <input type="text" name="CVC" id="CVC" pattern="[0-9]+" minlength="3" maxlength="3" placeholder="123">
+
+  <!-- Expiration Card -->
+  <label for="Expiration"> Expiration </label>
+  <input type="date" name="Expiration" id="Expiration">
+
+  <!-- Billing Address -->
+<label for="indirizzo"> Billing Address </label>
+  <input type="text" id="indirizzo" name="indirizzo" placeholder="Via Corso Italia 35">
+  
+
+
+ <button> Send </button>
+  </body>
+</html>
+
+
+
